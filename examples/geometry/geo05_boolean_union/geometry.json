@@ -1,0 +1,68 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "BaseBox",
+          "half_size": [
+            { "value": 3.0, "unit": "cm" },
+            { "value": 3.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        },
+        {
+          "name": "TallBox",
+          "half_size": [
+            { "value": 1.5, "unit": "cm" },
+            { "value": 1.5, "unit": "cm" },
+            { "value": 4.0, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        }
+      ]
+    },
+
+    "boolean": {
+      "union": [
+        {
+          "name": "Union",
+          "solid_a": "BaseBox",
+          "solid_b": "TallBox",
+          "transform": {
+            "translation": [
+              { "value": 0.0, "unit": "cm" },
+              { "value": 0.0, "unit": "cm" },
+              { "value": 3.0, "unit": "cm" }
+            ],
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "material": "G4_Si"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "Union",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "UnionPV"
+      }
+    ]
+  },
+
+  "source": {},
+
+  "scoring": []
+}

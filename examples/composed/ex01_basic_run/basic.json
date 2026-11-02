@@ -1,0 +1,50 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "Box",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "place",
+        "child": "Box",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ],
+        "name": "BoxPV"
+      }
+    ]
+  },
+  "source": {
+    "particle": "gamma",
+
+    "energy": {
+      "value": 0.1,
+      "unit": "MeV"
+    },
+
+    "type": "point",
+
+    "position": [
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" },
+      { "value": -20.0, "unit": "cm" }
+    ],
+
+    "direction": [0.0, 0.0, 1.0]
+  },
+  "scoring": ["Box"]
+}

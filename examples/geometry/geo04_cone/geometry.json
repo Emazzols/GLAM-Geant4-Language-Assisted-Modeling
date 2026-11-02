@@ -1,0 +1,33 @@
+{
+  "geometry": {
+    "primitives": {
+      "cone": [
+        {
+          "name": "Cone",
+          "r_min_bottom": { "value": 0.0, "unit": "cm" },
+          "r_max_bottom": { "value": 5.0, "unit": "cm" },
+          "r_min_top": { "value": 0.0, "unit": "cm" },
+          "r_max_top": { "value": 2.0, "unit": "cm" },
+          "half_height": { "value": 10.0, "unit": "cm" },
+          "material": "G4_Al"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "place",
+        "child": "Cone",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ],
+        "name": "ConePV"
+      }
+    ]
+  },
+  "source": {},
+  "scoring": []
+}

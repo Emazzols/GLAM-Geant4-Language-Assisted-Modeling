@@ -1,0 +1,56 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "OuterBox",
+          "half_size": [
+            { "value": 4.0, "unit": "cm" },
+            { "value": 4.0, "unit": "cm" },
+            { "value": 4.0, "unit": "cm" }
+          ],
+          "material": "G4_Al"
+        },
+        {
+          "name": "InnerBox",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "OuterBox",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "OuterBoxPV"
+      },
+      {
+        "type": "place",
+        "child": "InnerBox",
+        "mother": "OuterBox",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "InnerBoxPV"
+      }
+    ]
+  },
+
+  "source": {},
+
+  "scoring": []
+}

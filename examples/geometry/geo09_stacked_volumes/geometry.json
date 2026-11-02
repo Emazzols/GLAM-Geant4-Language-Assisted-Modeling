@@ -1,0 +1,50 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "Box1",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE"
+        },
+        {
+          "name": "Box2",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE"
+        },
+        {
+          "name": "Box3",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "stacked",
+        "volumes": ["Box1", "Box2", "Box3"],
+        "mother": "worldLV",
+        "axis": [0.0, 0.0, 1.0],
+        "spacing": { "value": 1.2, "unit": "cm" }
+      }
+    ]
+  },
+
+  "source": {},
+
+  "scoring": []
+}

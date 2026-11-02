@@ -1,0 +1,78 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "Box1",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        },
+        {
+          "name": "Box2",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        },
+        {
+          "name": "Box3",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ],
+          "material": "G4_Si"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "Box1",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": -2.0, "unit": "cm" }
+        ],
+        "name": "Box1PV",
+        "copy_no": 0
+      },
+      {
+        "type": "place",
+        "child": "Box2",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "Box2PV",
+        "copy_no": 1
+      },
+      {
+        "type": "place",
+        "child": "Box3",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 2.0, "unit": "cm" }
+        ],
+        "name": "Box3PV",
+        "copy_no": 2
+      }
+    ]
+  },
+
+  "source": {},
+  "scoring": []
+}

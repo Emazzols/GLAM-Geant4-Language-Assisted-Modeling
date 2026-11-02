@@ -1,0 +1,29 @@
+{
+  "geometry": {},
+
+  "source": {
+    "particle": "gamma",
+
+    "energy": {
+      "value": 0.1,
+      "unit": "MeV"
+    },
+
+    "type": "disk",
+
+    "radius": {
+      "value": 5.0,
+      "unit": "cm"
+    },
+
+    "position": [
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" },
+      { "value": -20.0, "unit": "cm" }
+    ],
+
+    "direction": [0, 0, 1]
+  },
+
+  "scoring": []
+}

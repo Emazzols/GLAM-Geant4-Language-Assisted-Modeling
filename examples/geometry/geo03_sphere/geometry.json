@@ -1,0 +1,29 @@
+{
+  "geometry": {
+    "primitives": {
+      "sphere": [
+        {
+          "name": "Sphere",
+          "radius": { "value": 3.0, "unit": "cm" },
+          "material": "G4_Si"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "place",
+        "child": "Sphere",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ],
+        "name": "Sphere"
+      }
+    ]
+  },
+  "source": {},
+  "scoring": []
+}

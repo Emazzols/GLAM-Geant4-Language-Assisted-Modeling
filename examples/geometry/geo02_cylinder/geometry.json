@@ -1,0 +1,31 @@
+{
+"geometry": {
+    "primitives": {
+      "cylinder": [
+        {
+          "name": "Cylinder",
+          "r_min": { "value": 0.0, "unit": "cm" },
+          "r_max": { "value": 2.0, "unit": "cm" },
+          "half_height": { "value": 5.0, "unit": "cm" },
+          "material": "G4_Al"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "place",
+        "child": "Cylinder",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ],
+        "name": "Cylinder"
+      }
+    ]
+  },
+  "source": {},
+  "scoring": []
+}

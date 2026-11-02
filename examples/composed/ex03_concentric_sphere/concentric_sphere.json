@@ -1,0 +1,78 @@
+{
+  "geometry": {
+    "primitives": {
+      "sphere": [
+        {
+          "name": "layer2",
+          "radius": { "value": 8.0, "unit": "cm" },
+          "material": "G4_Pb"
+        },
+        {
+          "name": "layer1",
+          "radius": { "value": 5.0, "unit": "cm" },
+          "material": "G4_Al"
+        },
+        {
+          "name": "core",
+          "radius": { "value": 2.0, "unit": "cm" },
+          "material": "G4_PbWO4"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "place",
+        "child": "layer2",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "layer2PV"
+      },
+      {
+        "type": "place",
+        "child": "layer1",
+        "mother": "layer2",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "layer1PV"
+      },
+      {
+        "type": "place",
+        "child": "core",
+        "mother": "layer1",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "corePV"
+      }
+    ]
+  },
+  "source": {
+    "particle": "gamma",
+    "energy": {
+      "value": 1.0,
+      "unit": "MeV"
+    },
+    "type": "point",
+    "position": [
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" }
+    ],
+    "isotropic": true
+  },
+  "scoring": [
+    "core",
+    "layer1",
+    "layer2"
+  ]
+}

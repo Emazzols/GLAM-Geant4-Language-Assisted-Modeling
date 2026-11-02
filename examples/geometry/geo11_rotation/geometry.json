@@ -1,0 +1,94 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "Rod",
+          "half_size": [
+            { "value": 0.5, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" },
+            { "value": 4.0, "unit": "cm" }
+          ],
+          "material": "G4_Al"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "Rod",
+        "mother": "worldLV",
+        "position": [
+          { "value": -15.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "Rod_NoRotation"
+      },
+      {
+        "type": "place",
+        "child": "Rod",
+        "mother": "worldLV",
+        "position": [
+          { "value": -8.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "rotation": {
+          "x": 90.0
+        },
+        "name": "Rod_RotX"
+      },
+      {
+        "type": "place",
+        "child": "Rod",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "rotation": {
+          "y": 90.0
+        },
+        "name": "Rod_RotY"
+      },
+      {
+        "type": "place",
+        "child": "Rod",
+        "mother": "worldLV",
+        "position": [
+          { "value": 8.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "rotation": {
+          "z": 45.0
+        },
+        "name": "Rod_RotZ"
+      },
+      {
+        "type": "place",
+        "child": "Rod",
+        "mother": "worldLV",
+        "position": [
+          { "value": 15.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "rotation": {
+          "x": 45.0,
+          "y": 45.0,
+          "z": 45.0
+        },
+        "name": "Rod_RotXYZ"
+      }
+    ]
+  },
+
+  "source": {},
+
+  "scoring": []
+}

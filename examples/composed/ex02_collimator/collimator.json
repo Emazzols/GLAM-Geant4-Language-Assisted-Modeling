@@ -1,0 +1,86 @@
+{
+  "geometry": {
+    "primitives": {
+      "cylinder": [
+        {
+          "name": "collimator1",
+          "r_min": { "value": 1.5, "unit": "cm" },
+          "r_max": { "value": 5.0, "unit": "cm" },
+          "half_height": { "value": 1.0, "unit": "cm" },
+          "material": "G4_Al"
+        },
+        {
+          "name": "collimator2",
+          "r_min": { "value": 1.0, "unit": "cm" },
+          "r_max": { "value": 5.0, "unit": "cm" },
+          "half_height": { "value": 1.0, "unit": "cm" },
+          "material": "G4_Al"
+        },
+        {
+          "name": "collimator3",
+          "r_min": { "value": 0.5, "unit": "cm" },
+          "r_max": { "value": 5.0, "unit": "cm" },
+          "half_height": { "value": 1.0, "unit": "cm" },
+          "material": "G4_Al"
+        }
+      ],
+      "box": [
+        {
+          "name": "detector",
+          "half_size": [
+            { "value": 5.0, "unit": "cm" },
+            { "value": 5.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ],
+          "material": "G4_PbWO4"
+        }
+      ]
+    },
+    "booleans": {},
+    "placement": [
+      {
+        "type": "stacked",
+        "volumes": [
+          "collimator1",
+          "collimator2",
+          "collimator3"
+        ],
+        "mother": "worldLV",
+        "axis": [0.0, 0.0, 1.0],
+        "spacing": { "value": 2.5, "unit": "cm" }
+      },
+      {
+        "type": "place",
+        "child": "detector",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 10.0, "unit": "cm" }
+        ],
+        "name": "detectorPV"
+      }
+    ]
+  },
+  "source": {
+    "particle": "gamma",
+    "energy": {
+      "value": 0.1,
+      "unit": "MeV"
+    },
+    "type": "disk",
+    "position": [
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" },
+      { "value": -20.0, "unit": "cm" }
+    ],
+    "radius": {
+      "value": 40.0,
+      "unit": "mm"
+    },
+    "direction": [0, 0, 1]
+  },
+  "scoring": [
+    "detector"
+  ]
+}

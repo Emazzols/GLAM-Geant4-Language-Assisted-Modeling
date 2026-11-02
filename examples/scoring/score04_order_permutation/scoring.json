@@ -1,0 +1,81 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "cube_1",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "cube_2",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "cube_3",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ]
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "cube_1",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": -5.0, "unit": "cm" }
+        ],
+        "name": "cube1_PV",
+        "copy_no": 0
+      },
+      {
+        "type": "place",
+        "child": "cube_2",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "cube2_PV",
+        "copy_no": 1
+      },
+      {
+        "type": "place",
+        "child": "cube_3",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 5.0, "unit": "cm" }
+        ],
+        "name": "cube3_PV",
+        "copy_no": 2
+      }
+    ]
+  },
+
+  "source": {},
+
+  "scoring": [
+    "cube_3",
+    "cube_1"
+  ]
+}

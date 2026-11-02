@@ -1,0 +1,67 @@
+{
+  "geometry": {
+
+    "primitives": {
+      "box": [
+        {
+          "name": "BoxA",
+          "half_size": [
+            { "value": 3.0, "unit": "cm" },
+            { "value": 3.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" }
+          ],
+          "material": "G4_WATER"
+        },
+        {
+          "name": "BoxB",
+          "half_size": [
+            { "value": 2.0, "unit": "cm" },
+            { "value": 2.0, "unit": "cm" },
+            { "value": 3.0, "unit": "cm" }
+          ],
+          "material": "G4_WATER"
+        }
+      ]
+    },
+
+    "boolean": {
+      "intersection": [
+        {
+          "name": "Intersection",
+          "solid_a": "BoxA",
+          "solid_b": "BoxB",
+          "transform": {
+            "translation": [
+              { "value": 1.0, "unit": "cm" },
+              { "value": 0.0, "unit": "cm" },
+              { "value": 0.0, "unit": "cm" }
+            ],
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "material": "G4_WATER"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "Intersection",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" },
+          { "value": 0.0, "unit": "cm" }
+        ],
+        "name": "IntersectionPV"
+      }
+    ]
+  },
+
+  "source": {},
+  "scoring": []
+}

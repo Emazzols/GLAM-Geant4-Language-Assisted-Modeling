@@ -1,0 +1,143 @@
+{
+    "geometry": {
+        "primitives": {
+            "sphere": [
+                {
+                    "name": "head",
+                    "radius": {"value": 5.0, "unit": "cm"},
+                    "material": "G4_WATER"
+                }
+            ],
+            "cylinder": [
+                {
+                    "name": "eye",
+                    "r_min": {"value": 0.0, "unit": "cm"},
+                    "r_max": {"value": 1.0, "unit": "cm"},
+                    "half_height": {"value": 0.5, "unit": "cm"},
+                    "material": "G4_BONE_COMPACT_ICRU"
+                }
+            ],
+            "box": [
+                {
+                    "name": "mouth",
+                    "half_size": [
+                        {"value": 3.0, "unit": "cm"},
+                        {"value": 0.5, "unit": "cm"},
+                        {"value": 0.5, "unit": "cm"}
+                    ],
+                    "material": "G4_POLYSTYRENE"
+                }
+            ],
+            "cone": [
+                {
+                    "name": "nose",
+                    "r_min_bottom": {"value": 0.0, "unit": "cm"},
+                    "r_max_bottom": {"value": 2.0, "unit": "cm"},
+                    "r_min_top": {"value": 0.0, "unit": "cm"},
+                    "r_max_top": {"value": 0.3, "unit": "cm"},
+                    "half_height": {"value": 3.0, "unit": "cm"},
+                    "material": "G4_POLYETHYLENE"
+                },
+                {
+                    "name": "hat",
+                    "r_min_bottom": {"value": 0.0, "unit": "cm"},
+                    "r_max_bottom": {"value": 4.0, "unit": "cm"},
+                    "r_min_top": {"value": 0.0, "unit": "cm"},
+                    "r_max_top": {"value": 1.5, "unit": "cm"},
+                    "half_height": {"value": 4.0, "unit": "cm"},
+                    "material": "G4_Al"
+                }
+            ]
+        },
+        "placement": [
+            {
+                "type": "place",
+                "child": "head",
+                "mother": "worldLV",
+                "position": [
+                    {"value": 0, "unit": "cm"},
+                    {"value": 0, "unit": "cm"},
+                    {"value": 0, "unit": "cm"}
+                ],
+                "name": "head"
+            },
+            {
+                "type": "place",
+                "child": "eye",
+                "mother": "worldLV",
+                "position": [
+                    {"value": -3, "unit": "cm"},
+                    {"value":  2, "unit": "cm"},
+                    {"value":  5, "unit": "cm"}
+                ],
+                "name": "eye_left",
+                "copy_no": 0
+            },
+            {
+                "type": "place",
+                "child": "eye",
+                "mother": "worldLV",
+                "position": [
+                    {"value":  3, "unit": "cm"},
+                    {"value":  2, "unit": "cm"},
+                    {"value":  5, "unit": "cm"}
+                ],
+                "name": "eye_right",
+                "copy_no": 1
+            },
+            {
+                "type": "place",
+                "child": "mouth",
+                "mother": "worldLV",
+                "position": [
+                    {"value": 0, "unit": "cm"},
+                    {"value": -3, "unit": "cm"},
+                    {"value": 5, "unit": "cm"}
+                ],
+                "name": "mouth"
+            },
+            {
+                "type": "place",
+                "child": "nose",
+                "mother": "worldLV",
+                "position": [
+                    {"value": 0, "unit": "cm"},
+                    {"value": 0, "unit": "cm"},
+                    {"value": 8, "unit": "cm"}
+                ],
+                "name": "nose"
+            },
+            {
+                "type": "place",
+                "child": "hat",
+                "mother": "worldLV",
+                "position": [
+                    {"value": 0, "unit": "cm"},
+                    {"value": 9, "unit": "cm"},
+                    {"value": 0, "unit": "cm"}
+                ],
+                "rotation": {
+                    "x": 90
+                },
+                "name": "hat"
+            }
+        ]
+    },
+
+    "source": {
+        "particle": "e-",
+        "energy": {"value": 0.5, "unit": "MeV"},
+        "type": "sphere",
+        "position": [
+            {"value": 0, "unit": "cm"},
+            {"value": 0, "unit": "cm"},
+            {"value": 0, "unit": "cm"}
+        ],
+        "radius": {"value": 1.0, "unit": "cm"},
+        "isotropic": true
+    },
+
+    "scoring": [
+        "head"
+    ]
+}
