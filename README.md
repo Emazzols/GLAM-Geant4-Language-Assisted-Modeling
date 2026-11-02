@@ -99,7 +99,6 @@ GLAM/
 │   ├── geometry/
 │   ├── instruction/
 │   └── scoring/
-├── examples_old/     # Previous examples
 ├── instructor.ipynb  # LLM-based IR generation
 ├── json_from_Gemini  # Contains the json file produced by the LLM
 ├── sim/              # Simulation files
