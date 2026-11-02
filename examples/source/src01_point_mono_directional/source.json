@@ -1,0 +1,24 @@
+{
+  "geometry": {},
+
+  "source": {
+    "particle": "gamma",
+
+    "energy": {
+      "value": 0.1,
+      "unit": "MeV"
+    },
+
+    "type": "point",
+
+    "position": [
+      { "value": 0.0, "unit": "cm" },
+      { "value": 0.0, "unit": "cm" },
+      { "value": -20.0, "unit": "cm" }
+    ],
+
+    "direction": [0.0, 0.0, 1.0]
+  },
+
+  "scoring": []
+}

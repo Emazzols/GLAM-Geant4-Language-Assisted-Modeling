@@ -1,0 +1,176 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "<string>",
+          "half_size": [
+            {"value": "<number>", "unit": "<length_unit>"},
+            {"value": "<number>", "unit": "<length_unit>"},
+            {"value": "<number>", "unit": "<length_unit>"}
+          ],
+          "material": "<allowed_material>"
+        }
+      ],
+
+      "cylinder": [
+        {
+          "name": "<string>",
+          "r_min": {"value": "<number>", "unit": "<length_unit>"},
+          "r_max": {"value": "<number>", "unit": "<length_unit>"},
+          "half_height": {"value": "<number>", "unit": "<length_unit>"},
+          "material": "<allowed_material>"
+        }
+      ],
+
+      "sphere": [
+        {
+          "name": "<string>",
+          "radius": {"value": "<number>", "unit": "<length_unit>"},
+          "material": "<allowed_material>"
+        }
+      ],
+
+      "cone": [
+        {
+          "name": "<string>",
+          "r_min_bottom": {"value": "<number>", "unit": "<length_unit>"},
+          "r_max_bottom": {"value": "<number>", "unit": "<length_unit>"},
+          "r_min_top": {"value": "<number>", "unit": "<length_unit>"},
+          "r_max_top": {"value": "<number>", "unit": "<length_unit>"},
+          "half_height": {"value": "<number>", "unit": "<length_unit>"},
+          "material": "<allowed_material>"
+        }
+      ]
+    },
+
+    "booleans": {
+      "union": [
+        {
+          "name": "<string>",
+          "solid_a": "<existing_solid>",
+          "solid_b": "<existing_solid>",
+
+          "transform": {
+            "translation": [
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"}
+            ],
+            "rotation": {
+              "x": "<deg>",
+              "y": "<deg>",
+              "z": "<deg>"
+            }
+          },
+
+          "material": "<allowed_material>"
+        }
+      ],
+
+      "subtraction": [
+        {
+          "name": "<string>",
+          "solid_a": "<existing_solid>",
+          "solid_b": "<existing_solid>",
+          "transform": {
+            "translation": [
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"}
+            ],
+            "rotation": {
+              "x": "<deg>",
+              "y": "<deg>",
+              "z": "<deg>"
+            }
+          },
+          "material": "<allowed_material>"
+        }
+      ],
+
+      "intersection": [
+        {
+          "name": "<string>",
+          "solid_a": "<existing_solid>",
+          "solid_b": "<existing_solid>",
+          "transform": {
+            "translation": [
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"},
+              {"value": "<number>", "unit": "<length_unit>"}
+            ],
+            "rotation": {
+              "x": "<deg>",
+              "y": "<deg>",
+              "z": "<deg>"
+            }
+          },
+          "material": "<allowed_material>"
+        }
+      ]
+    },
+
+    "placement": [
+      {
+        "type": "place",
+        "child": "<volume>",
+        "mother": "<volume>",
+        "position": [
+          {"value": "<number>", "unit": "<length_unit>"},
+          {"value": "<number>", "unit": "<length_unit>"},
+          {"value": "<number>", "unit": "<length_unit>"}
+        ],
+        "name": "<placement_name>",
+        "rotation": {
+          "x": "<deg>",
+          "y": "<deg>",
+          "z": "<deg>"
+        },
+        "copy_no": "<int>"
+      },
+
+      {
+        "type": "stacked",
+        "volumes": ["<volume>", "<volume>"],
+        "mother": "<volume>",
+        "axis": [
+          "<direction_x>",
+          "<direction_y>",
+          "<direction_z>"
+        ],
+        "spacing": {"value": "<number>", "unit": "<length_unit>"}
+      }
+    ]
+  },
+
+  "source": {
+    "particle": "<allowed_particle>",
+
+    "energy": {
+      "value": "<number>",
+      "unit": "<energy_unit>"
+    },
+
+    "type": "point | disk | sphere",
+
+    "position": [
+      {"value": "<number>", "unit": "<length_unit>"},
+      {"value": "<number>", "unit": "<length_unit>"},
+      {"value": "<number>", "unit": "<length_unit>"}
+    ],
+
+    "radius": {
+      "value": "<number>",
+      "unit": "<length_unit>"
+    },
+
+    "direction": ["<x>", "<y>", "<z>"],
+
+    "isotropic": "<boolean>"
+  },
+
+  "scoring": [
+    "<existing_volume_name>"
+  ]
+}

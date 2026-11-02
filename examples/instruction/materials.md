@@ -1,0 +1,317 @@
+# Geant4 NIST Materials
+
+This document lists all NIST materials available in this Geant4 installation.
+
+Only the materials listed here are allowed to be used in geometry definitions.
+Material names must be used exactly as written.
+
+
+- G4_WATER - water
+- G4_H - hydrogen
+- G4_He - helium
+- G4_Li - lithium
+- G4_Be - beryllium
+- G4_B - boron
+- G4_C - carbon
+- G4_N - nitrogen
+- G4_O - oxygen
+- G4_F - fluorine
+- G4_Ne - neon
+- G4_Na - sodium
+- G4_Mg - magnesium
+- G4_Al - aluminum
+- G4_Si - silicon
+- G4_P - phosphorus
+- G4_S - sulfur
+- G4_Cl - chlorine
+- G4_Ar - argon
+- G4_K - potassium
+- G4_Ca - calcium
+- G4_Sc - scandium
+- G4_Ti - titanium
+- G4_V - vanadium
+- G4_Cr - chromium
+- G4_Mn - manganese
+- G4_Fe - iron
+- G4_Co - cobalt
+- G4_Ni - nickel
+- G4_Cu - copper
+- G4_Zn - zinc
+- G4_Ga - gallium
+- G4_Ge - germanium
+- G4_As - arsenic
+- G4_Se - selenium
+- G4_Br - bromine
+- G4_Kr - krypton
+- G4_Rb - rubidium
+- G4_Sr - strontium
+- G4_Y - yttrium
+- G4_Zr - zirconium
+- G4_Nb - niobium
+- G4_Mo - molybdenum
+- G4_Tc - technetium
+- G4_Ru - ruthenium
+- G4_Rh - rhodium
+- G4_Pd - palladium
+- G4_Ag - silver
+- G4_Cd - cadmium
+- G4_In - indium
+- G4_Sn - tin
+- G4_Sb - antimony
+- G4_Te - tellurium
+- G4_I - iodine
+- G4_Xe - xenon
+- G4_Cs - cesium
+- G4_Ba - barium
+- G4_La - lanthanum
+- G4_Ce - cerium
+- G4_Pr - praseodymium
+- G4_Nd - neodymium
+- G4_Pm - promethium
+- G4_Sm - samarium
+- G4_Eu - europium
+- G4_Gd - gadolinium
+- G4_Tb - terbium
+- G4_Dy - dysprosium
+- G4_Ho - holmium
+- G4_Er - erbium
+- G4_Tm - thulium
+- G4_Yb - ytterbium
+- G4_Lu - lutetium
+- G4_Hf - hafnium
+- G4_Ta - tantalum
+- G4_W - tungsten
+- G4_Re - rhenium
+- G4_Os - osmium
+- G4_Ir - iridium
+- G4_Pt - platinum
+- G4_Au - gold
+- G4_Hg - mercury
+- G4_Tl - thallium
+- G4_Pb - lead
+- G4_Bi - bismuth
+- G4_Po - polonium
+- G4_At - astatine
+- G4_Rn - radon
+- G4_Fr - francium
+- G4_Ra - radium
+- G4_Ac - actinium
+- G4_Th - thorium
+- G4_Pa - protactinium
+- G4_U - uranium
+- G4_Np - neptunium
+- G4_Pu - plutonium
+- G4_Am - americium
+- G4_Cm - curium
+- G4_Bk - berkelium
+- G4_Cf - californium
+- G4_A-150_TISSUE - A-150 tissue
+- G4_ACETONE - acetone
+- G4_ACETYLENE - acetylene
+- G4_ADENINE - adenine
+- G4_ADIPOSE_TISSUE_ICRP - adipose tissue
+- G4_AIR - air
+- G4_ALANINE - alanine
+- G4_ALUMINUM_OXIDE - aluminum oxide
+- G4_AMBER - amber
+- G4_AMMONIA - ammonia
+- G4_ANILINE - aniline
+- G4_ANTHRACENE - anthracene
+- G4_B-100_BONE - bone equivalent material
+- G4_BAKELITE - bakelite
+- G4_BARIUM_FLUORIDE - barium fluoride
+- G4_BARIUM_SULFATE - barium sulfate
+- G4_BENZENE - benzene
+- G4_BERYLLIUM_OXIDE - beryllium oxide
+- G4_BGO - bismuth germanate
+- G4_BLOOD_ICRP - blood
+- G4_BONE_COMPACT_ICRU - compact bone
+- G4_BONE_CORTICAL_ICRP - cortical bone
+- G4_BORON_CARBIDE - boron carbide
+- G4_BORON_OXIDE - boron oxide
+- G4_BRAIN_ICRP - brain tissue
+- G4_BUTANE - butane
+- G4_N-BUTYL_ALCOHOL - n-butanol
+- G4_C-552 - C-552 air-equivalent plastic
+- G4_CADMIUM_TELLURIDE - cadmium telluride
+- G4_CADMIUM_TUNGSTATE - cadmium tungstate
+- G4_CALCIUM_CARBONATE - calcium carbonate
+- G4_CALCIUM_FLUORIDE - calcium fluoride
+- G4_CALCIUM_OXIDE - calcium oxide
+- G4_CALCIUM_SULFATE - calcium sulfate
+- G4_CALCIUM_TUNGSTATE - calcium tungstate
+- G4_CARBON_DIOXIDE - carbon dioxide
+- G4_CARBON_TETRACHLORIDE - carbon tetrachloride
+- G4_CELLULOSE_CELLOPHANE - cellulose cellophane
+- G4_CELLULOSE_BUTYRATE - cellulose butyrate
+- G4_CELLULOSE_NITRATE - cellulose nitrate
+- G4_CERIC_SULFATE - ceric sulfate
+- G4_CESIUM_FLUORIDE - cesium fluoride
+- G4_CESIUM_IODIDE - cesium iodide
+- G4_CHLOROBENZENE - chlorobenzene
+- G4_CHLOROFORM - chloroform
+- G4_CONCRETE - concrete
+- G4_CYCLOHEXANE - cyclohexane
+- G4_1,2-DICHLOROBENZENE - 1,2-dichlorobenzene
+- G4_DICHLORODIETHYL_ETHER - dichlorodiethyl ether
+- G4_1,2-DICHLOROETHANE - 1,2-dichloroethane
+- G4_DIETHYL_ETHER - diethyl ether
+- G4_N,N-DIMETHYL_FORMAMIDE - dimethylformamide
+- G4_DIMETHYL_SULFOXIDE - dimethyl sulfoxide
+- G4_ETHANE - ethane
+- G4_ETHYL_ALCOHOL - ethanol
+- G4_ETHYL_CELLULOSE - ethyl cellulose
+- G4_ETHYLENE - ethylene
+- G4_EYE_LENS_ICRP - eye lens
+- G4_FERRIC_OXIDE - ferric oxide
+- G4_FERROBORIDE - ferroboride
+- G4_FERROUS_OXIDE - ferrous oxide
+- G4_FERROUS_SULFATE - ferrous sulfate
+- G4_FREON-12 - freon-12
+- G4_FREON-12B2 - freon-12B2
+- G4_FREON-13 - freon-13
+- G4_FREON-13B1 - freon-13B1
+- G4_FREON-13I1 - freon-13I1
+- G4_GADOLINIUM_OXYSULFIDE - gadolinium oxysulfide
+- G4_GALLIUM_ARSENIDE - gallium arsenide
+- G4_GEL_PHOTO_EMULSION - gel photographic emulsion
+- G4_Pyrex_Glass - pyrex glass
+- G4_GLASS_LEAD - lead glass
+- G4_GLASS_PLATE - glass plate
+- G4_GLUTAMINE - glutamine
+- G4_GLYCEROL - glycerol
+- G4_GUANINE - guanine
+- G4_GYPSUM - gypsum
+- G4_N-HEPTANE - n-heptane
+- G4_N-HEXANE - n-hexane
+- G4_KAPTON - kapton
+- G4_LANTHANUM_OXYBROMIDE - lanthanum oxybromide
+- G4_LANTHANUM_OXYSULFIDE - lanthanum oxysulfide
+- G4_LEAD_OXIDE - lead oxide
+- G4_LITHIUM_AMIDE - lithium amide
+- G4_LITHIUM_CARBONATE - lithium carbonate
+- G4_LITHIUM_FLUORIDE - lithium fluoride
+- G4_LITHIUM_HYDRIDE - lithium hydride
+- G4_LITHIUM_IODIDE - lithium iodide
+- G4_LITHIUM_OXIDE - lithium oxide
+- G4_LITHIUM_TETRABORATE - lithium tetraborate
+- G4_LUNG_ICRP - lung tissue
+- G4_M3_WAX - M3 wax
+- G4_MAGNESIUM_CARBONATE - magnesium carbonate
+- G4_MAGNESIUM_FLUORIDE - magnesium fluoride
+- G4_MAGNESIUM_OXIDE - magnesium oxide
+- G4_MAGNESIUM_TETRABORATE - magnesium tetraborate
+- G4_MERCURIC_IODIDE - mercuric iodide
+- G4_METHANE - methane
+- G4_METHANOL - methanol
+- G4_MIX_D_WAX - mixed wax
+- G4_MS20_TISSUE - MS20 tissue
+- G4_MUSCLE_SKELETAL_ICRP - skeletal muscle
+- G4_MUSCLE_STRIATED_ICRU - striated muscle
+- G4_MUSCLE_WITH_SUCROSE - muscle with sucrose
+- G4_MUSCLE_WITHOUT_SUCROSE - muscle without sucrose
+- G4_NAPHTHALENE - naphthalene
+- G4_NITROBENZENE - nitrobenzene
+- G4_NITROUS_OXIDE - nitrous oxide
+- G4_NYLON-8062 - nylon 8062
+- G4_NYLON-6-6 - nylon 6-6
+- G4_NYLON-6-10 - nylon 6-10
+- G4_NYLON-11_RILSAN - nylon 11 rilsan
+- G4_OCTANE - octane
+- G4_PARAFFIN - paraffin
+- G4_N-PENTANE - n-pentane
+- G4_PHOTO_EMULSION - photographic emulsion
+- G4_PLASTIC_SC_VINYLTOLUENE - plastic scintillator (vinyltoluene)
+- G4_PLUTONIUM_DIOXIDE - plutonium dioxide
+- G4_POLYACRYLONITRILE - polyacrylonitrile
+- G4_POLYCARBONATE - polycarbonate
+- G4_POLYCHLOROSTYRENE - polychlorostyrene
+- G4_POLYETHYLENE - polyethylene
+- G4_MYLAR - mylar
+- G4_PLEXIGLASS - plexiglass
+- G4_POLYOXYMETHYLENE - polyoxymethylene
+- G4_POLYPROPYLENE - polypropylene
+- G4_POLYSTYRENE - polystyrene
+- G4_TEFLON - polytetrafluoroethylene
+- G4_POLYTRIFLUOROCHLOROETHYLENE - polytrifluorochloroethylene
+- G4_POLYVINYL_ACETATE - polyvinyl acetate
+- G4_POLYVINYL_ALCOHOL - polyvinyl alcohol
+- G4_POLYVINYL_BUTYRAL - polyvinyl butyral
+- G4_POLYVINYL_CHLORIDE - polyvinyl chloride
+- G4_POLYVINYLIDENE_CHLORIDE - polyvinylidene chloride
+- G4_POLYVINYLIDENE_FLUORIDE - polyvinylidene fluoride
+- G4_POLYVINYL_PYRROLIDONE - polyvinyl pyrrolidone
+- G4_POTASSIUM_IODIDE - potassium iodide
+- G4_POTASSIUM_OXIDE - potassium oxide
+- G4_PROPANE - propane
+- G4_lPROPANE - liquid propane
+- G4_N-PROPYL_ALCOHOL - n-propanol
+- G4_PYRIDINE - pyridine
+- G4_RUBBER_BUTYL - butyl rubber
+- G4_RUBBER_NATURAL - natural rubber
+- G4_RUBBER_NEOPRENE - neoprene rubber
+- G4_SILICON_DIOXIDE - silicon dioxide
+- G4_SILVER_BROMIDE - silver bromide
+- G4_SILVER_CHLORIDE - silver chloride
+- G4_SILVER_HALIDES - silver halides
+- G4_SILVER_IODIDE - silver iodide
+- G4_SKIN_ICRP - skin tissue
+- G4_SODIUM_CARBONATE - sodium carbonate
+- G4_SODIUM_IODIDE - sodium iodide
+- G4_SODIUM_MONOXIDE - sodium oxide
+- G4_SODIUM_NITRATE - sodium nitrate
+- G4_STILBENE - stilbene
+- G4_SUCROSE - sucrose
+- G4_TERPHENYL - terphenyl
+- G4_TESTIS_ICRP - testis tissue
+- G4_TETRACHLOROETHYLENE - tetrachloroethylene
+- G4_THALLIUM_CHLORIDE - thallium chloride
+- G4_TISSUE_SOFT_ICRP - soft tissue
+- G4_TISSUE_SOFT_ICRU-4 - soft tissue ICRU-4
+- G4_TISSUE-METHANE - tissue methane mixture
+- G4_TISSUE-PROPANE - tissue propane mixture
+- G4_TITANIUM_DIOXIDE - titanium dioxide
+- G4_TOLUENE - toluene
+- G4_TRICHLOROETHYLENE - trichloroethylene
+- G4_TRIETHYL_PHOSPHATE - triethyl phosphate
+- G4_TUNGSTEN_HEXAFLUORIDE - tungsten hexafluoride
+- G4_URANIUM_DICARBIDE - uranium dicarbide
+- G4_URANIUM_MONOCARBIDE - uranium monocarbide
+- G4_URANIUM_OXIDE - uranium oxide
+- G4_UREA - urea
+- G4_VALINE - valine
+- G4_VITON - viton
+- G4_WATER_VAPOR - water vapor
+- G4_XYLENE - xylene
+- G4_GRAPHITE - graphite
+- G4_lH2 - liquid hydrogen
+- G4_lN2 - liquid nitrogen
+- G4_lO2 - liquid oxygen
+- G4_lAr - liquid argon
+- G4_lBr - liquid bromine
+- G4_lKr - liquid krypton
+- G4_lXe - liquid xenon
+- G4_PbWO4 - lead tungstate
+- G4_Galactic - galactic vacuum
+- G4_GRAPHITE_POROUS - porous graphite
+- G4_LUCITE - lucite
+- G4_BRASS - brass
+- G4_BRONZE - bronze
+- G4_STAINLESS-STEEL - stainless steel
+- G4_CR39 - CR-39 plastic
+- G4_OCTADECANOL - octadecanol
+- G4_KEVLAR - kevlar
+- G4_DACRON - dacron
+- G4_NEOPRENE - neoprene
+- G4_CYTOSINE - cytosine
+- G4_THYMINE - thymine
+- G4_URACIL - uracil
+- G4_DEOXYRIBOSE - deoxyribose
+- G4_PHOSPHORIC_ACID - phosphoric acid
+- G4_DNA_DEOXYRIBOSE - DNA deoxyribose
+- G4_DNA_PHOSPHATE - DNA phosphate
+- G4_DNA_ADENINE - DNA adenine
+- G4_DNA_GUANINE - DNA guanine
+- G4_DNA_CYTOSINE - DNA cytosine
+- G4_DNA_THYMINE - DNA thymine
+- G4_DNA_URACIL - DNA uracil
