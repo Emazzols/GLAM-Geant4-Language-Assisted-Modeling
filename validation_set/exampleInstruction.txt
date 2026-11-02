@@ -1,0 +1,5 @@
+1) SiliconBox: Create a silicon box of size 10 cm × 10 cm × 10 cm centered at the origin.
+2) StackedBoxes: Create three identical plastic boxes of thickness 1 cm along z, stacked along the z axis with 2 cm spacing.
+3) IsotropicSource: Define a spherical gamma source of radius 5 mm at position (0, 0, -10 cm) with energy 1 MeV, emitting isotropically.
+4) CylindricalHole: Create an aluminum box of size 10 cm × 10 cm × 10 cm with a cylindrical hole of radius 2 cm passing through its center along the z axis.
+5) ScoringSelection: Create three silicon boxes aligned along the z axis and record energy deposition only in the first and the third box.

@@ -1,0 +1,42 @@
+{
+  "geometry": {
+    "primitives": {
+      "sphere": [
+        {
+          "name": "target",
+          "material": "G4_WATER",
+          "radius": { "value": 2, "unit": "cm" }
+        }
+      ]
+    },
+    "boolean": {},
+    "placement": [
+      {
+        "type": "place",
+        "name": "place_target",
+        "child": "target",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ]
+      }
+    ]
+  },
+  "source": {
+    "type": "sphere",
+    "particle": "gamma",
+    "radius": { "value": 5, "unit": "mm" },
+    "energy": { "value": 1, "unit": "MeV" },
+    "position": [
+      { "value": 0, "unit": "cm" },
+      { "value": 0, "unit": "cm" },
+      { "value": -10, "unit": "cm" }
+    ],
+    "isotropic": true
+  },
+  "scoring": [
+    "target"
+  ]
+}

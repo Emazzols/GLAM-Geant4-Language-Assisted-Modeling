@@ -1,0 +1,3 @@
+/home/emanuelemazzola/AIandPC/ArtificialIntelligence/progetti_miei/Geant4LLM/sim/build/CMakeFiles/SimpleSim.dir
+/home/emanuelemazzola/AIandPC/ArtificialIntelligence/progetti_miei/Geant4LLM/sim/build/CMakeFiles/edit_cache.dir
+/home/emanuelemazzola/AIandPC/ArtificialIntelligence/progetti_miei/Geant4LLM/sim/build/CMakeFiles/rebuild_cache.dir

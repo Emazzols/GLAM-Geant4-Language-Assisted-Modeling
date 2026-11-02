@@ -1,0 +1,75 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "al_box",
+          "material": "G4_Al",
+          "half_size": [
+            { "value": 5, "unit": "cm" },
+            { "value": 5, "unit": "cm" },
+            { "value": 5, "unit": "cm" }
+          ]
+        }
+      ],
+      "cylinder": [
+        {
+          "name": "hole_cylinder",
+          "material": "G4_AIR",
+          "r_min": { "value": 0, "unit": "cm" },
+          "r_max": { "value": 2, "unit": "cm" },
+          "half_height": { "value": 5, "unit": "cm" }
+        }
+      ]
+    },
+    "boolean": {
+      "subtraction": [
+        {
+          "name": "drilled_box",
+          "material": "G4_Al",
+          "solid_a": "al_box",
+          "solid_b": "hole_cylinder",
+          "transform": {
+            "translation": [
+              { "value": 0, "unit": "cm" },
+              { "value": 0, "unit": "cm" },
+              { "value": 0, "unit": "cm" }
+            ],
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        }
+      ]
+    },
+    "placement": [
+      {
+        "type": "place",
+        "name": "place_drilled_box",
+        "child": "drilled_box",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ]
+      }
+    ]
+  },
+  "source": {
+    "type": "point",
+    "particle": "gamma",
+    "energy": { "value": 1, "unit": "MeV" },
+    "position": [
+      { "value": 0, "unit": "cm" },
+      { "value": 0, "unit": "cm" },
+      { "value": -20, "unit": "cm" }
+    ],
+    "direction": [0, 0, 1]
+  },
+  "scoring": [
+    "drilled_box"
+  ]
+}

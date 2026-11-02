@@ -1,0 +1,65 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "plastic_box_1",
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "plastic_box_2",
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "plastic_box_3",
+          "material": "G4_PLASTIC_SC_VINYLTOLUENE",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 0.5, "unit": "cm" }
+          ]
+        }
+      ]
+    },
+    "boolean": {},
+    "placement": [
+      {
+        "type": "stacked",
+        "mother": "worldLV",
+        "volumes": [
+          "plastic_box_1",
+          "plastic_box_2",
+          "plastic_box_3"
+        ],
+        "axis": [0, 0, 1],
+        "spacing": { "value": 2, "unit": "cm" }
+      }
+    ]
+  },
+  "source": {
+    "type": "point",
+    "particle": "gamma",
+    "energy": { "value": 1, "unit": "MeV" },
+    "position": [
+      { "value": 0, "unit": "cm" },
+      { "value": 0, "unit": "cm" },
+      { "value": -10, "unit": "cm" }
+    ],
+    "direction": [0, 0, 1]
+  },
+  "scoring": [
+    "plastic_box_1",
+    "plastic_box_2",
+    "plastic_box_3"
+  ]
+}

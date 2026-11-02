@@ -1,0 +1,64 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "box_1",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "box_2",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" }
+          ]
+        },
+        {
+          "name": "box_3",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" },
+            { "value": 1, "unit": "cm" }
+          ]
+        }
+      ]
+    },
+    "boolean": {},
+    "placement": [
+      {
+        "type": "stacked",
+        "mother": "worldLV",
+        "volumes": [
+          "box_1",
+          "box_2",
+          "box_3"
+        ],
+        "axis": [0, 0, 1],
+        "spacing": { "value": 3, "unit": "cm" }
+      }
+    ]
+  },
+  "source": {
+    "type": "point",
+    "particle": "gamma",
+    "energy": { "value": 1, "unit": "MeV" },
+    "position": [
+      { "value": 0, "unit": "cm" },
+      { "value": 0, "unit": "cm" },
+      { "value": -20, "unit": "cm" }
+    ],
+    "direction": [0, 0, 1]
+  },
+  "scoring": [
+    "box_1",
+    "box_3"
+  ]
+}

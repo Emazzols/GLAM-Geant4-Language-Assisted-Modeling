@@ -1,0 +1,45 @@
+{
+  "geometry": {
+    "primitives": {
+      "box": [
+        {
+          "name": "silicon_box",
+          "material": "G4_Si",
+          "half_size": [
+            { "value": 5, "unit": "cm" },
+            { "value": 5, "unit": "cm" },
+            { "value": 5, "unit": "cm" }
+          ]
+        }
+      ]
+    },
+    "boolean": {},
+    "placement": [
+      {
+        "type": "place",
+        "name": "place_silicon_box",
+        "child": "silicon_box",
+        "mother": "worldLV",
+        "position": [
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" },
+          { "value": 0, "unit": "cm" }
+        ]
+      }
+    ]
+  },
+  "source": {
+    "type": "point",
+    "particle": "gamma",
+    "energy": { "value": 1, "unit": "MeV" },
+    "position": [
+      { "value": 0, "unit": "cm" },
+      { "value": 0, "unit": "cm" },
+      { "value": -20, "unit": "cm" }
+    ],
+    "direction": [0, 0, 1]
+  },
+  "scoring": [
+    "silicon_box"
+  ]
+}
